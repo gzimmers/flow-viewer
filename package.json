@@ -1,0 +1,20 @@
+{
+  "name": "flow-viewer",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Persistent, navigable execution Flows published by coding agents",
+  "workspaces": [
+    "server",
+    "web"
+  ],
+  "scripts": {
+    "dev": "node dev.mjs",
+    "seed": "npm run seed --workspace server",
+    "reseed": "npm run seed --workspace server -- --force",
+    "build": "npm run build --workspace web",
+    "start": "npm run start --workspace server",
+    "typecheck": "npm run typecheck --workspace server && npm run typecheck --workspace web",
+    "example": "npm run example --workspace server",
+    "self-flow": "npm run self-flow --workspace server"
+  }
+}

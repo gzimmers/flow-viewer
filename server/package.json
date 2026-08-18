@@ -1,0 +1,25 @@
+{
+  "name": "@flow-viewer/server",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --experimental-sqlite --watch --import tsx src/index.ts",
+    "start": "node --experimental-sqlite --import tsx src/index.ts",
+    "seed": "node --experimental-sqlite --import tsx src/seed-cli.ts",
+    "example": "node --experimental-sqlite --import tsx src/make-example.ts",
+    "self-flow": "node --experimental-sqlite --import tsx src/make-self-flow.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.7.4",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  }
+}
